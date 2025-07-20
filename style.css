@@ -689,3 +689,463 @@ footer::before {
     0% { left: -100%; }
     100% { left: 100%; }
 }
+
+/* Simple Menu Carousel Styles */
+.menu-slide {
+    transition: all 0.3s ease;
+}
+
+#menuCarouselTrack {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    width: 100%;
+}
+
+/* Navigation buttons responsive */
+@media (max-width: 991px) {
+    #menuCarouselPrev,
+    #menuCarouselNext {
+        margin-left: -15px !important;
+        margin-right: -15px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    #menuCarouselPrev {
+        left: 10px !important;
+        margin-left: 0 !important;
+    }
+    
+    #menuCarouselNext {
+        right: 10px !important;
+        margin-right: 0 !important;
+    }
+}
+
+/* Touch-friendly indicators */
+#menuCarouselIndicators button {
+    border: 2px solid var(--primary-burgundy) !important;
+    margin: 0 4px;
+    transition: all 0.3s ease;
+}
+
+#menuCarouselIndicators button:hover {
+    transform: scale(1.2);
+}
+
+/* Smooth transitions */
+#menuCarouselTrack {
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+/* Prevent text selection during swipe */
+.menu-slide {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Background Food Images Class */
+.bg-food {
+    position: relative;
+    background: linear-gradient(
+        135deg,
+        var(--bg-velvet) 0%,
+        var(--secondary-mahogany) 50%,
+        var(--bg-charcoal) 100%
+    );
+    overflow: hidden;
+}
+
+.bg-food::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        url('./images/bg/bgf_1.jpg'),
+        url('./images/bg/bgf_2.jpg'),
+        url('./images/bg/bgf_3.jpg');
+    background-size: 
+        33.333% auto,
+        33.333% auto,
+        33.333% auto;
+    background-position: 
+        0% center,
+        33.333% center,
+        66.666% center;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    opacity: 0.3;
+    z-index: 1;
+    animation: foodParallax 20s linear infinite;
+}
+
+.bg-food::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(26, 14, 14, 0.85) 0%,
+        rgba(139, 21, 56, 0.75) 30%,
+        rgba(44, 24, 16, 0.85) 70%,
+        rgba(26, 14, 14, 0.9) 100%
+    );
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Parallax Animation */
+@keyframes foodParallax {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100px);
+    }
+}
+
+/* Content positioning */
+.bg-food > * {
+    position: relative;
+    z-index: 3;
+}
+
+/* Alternative version with static background */
+.bg-food-static {
+    position: relative;
+    background: linear-gradient(
+        135deg,
+        var(--bg-velvet) 0%,
+        var(--secondary-mahogany) 50%,
+        var(--bg-charcoal) 100%
+    );
+    overflow: hidden;
+}
+
+.bg-food-static::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        url('./images/bg/bgf_1.jpg'),
+        url('./images/bg/bgf_2.jpg'),
+        url('./images/bg/bgf_3.jpg');
+    background-size: 
+        33.333% 400px,
+        33.333% 400px,
+        33.333% 400px;
+    background-position: 
+        0% top,
+        33.333% top,
+        66.666% top;
+    background-repeat: repeat-y;
+    opacity: 0.25;
+    z-index: 1;
+}
+
+.bg-food-static::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(26, 14, 14, 0.88) 0%,
+        rgba(139, 21, 56, 0.78) 25%,
+        rgba(184, 134, 11, 0.1) 50%,
+        rgba(139, 21, 56, 0.78) 75%,
+        rgba(26, 14, 14, 0.88) 100%
+    );
+    z-index: 2;
+    pointer-events: none;
+}
+
+.bg-food-static > * {
+    position: relative;
+    z-index: 3;
+}
+
+/* Luxury Food Background with Pattern */
+.bg-food-luxury {
+    position: relative;
+    background: linear-gradient(
+        135deg,
+        var(--bg-velvet) 0%,
+        var(--secondary-mahogany) 100%
+    );
+    overflow: hidden;
+}
+
+.bg-food-luxury::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        url('./images/bg/bgf_1.jpg'),
+        url('./images/bg/bgf_2.jpg'),
+        url('./images/bg/bgf_3.jpg');
+    background-size: 
+        calc(100% / 3) auto,
+        calc(100% / 3) auto,
+        calc(100% / 3) auto;
+    background-position: 
+        0% 0%,
+        33.333% 0%,
+        66.666% 0%;
+    background-repeat: repeat-y;
+    opacity: 0.2;
+    z-index: 1;
+    filter: brightness(0.8) contrast(1.2) saturate(1.1);
+}
+
+.bg-food-luxury::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 30%, rgba(184, 134, 11, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(139, 21, 56, 0.15) 0%, transparent 50%),
+        linear-gradient(
+            135deg,
+            rgba(26, 14, 14, 0.9) 0%,
+            rgba(139, 21, 56, 0.7) 30%,
+            rgba(184, 134, 11, 0.1) 50%,
+            rgba(139, 21, 56, 0.7) 70%,
+            rgba(26, 14, 14, 0.9) 100%
+        );
+    z-index: 2;
+    pointer-events: none;
+}
+
+.bg-food-luxury > * {
+    position: relative;
+    z-index: 3;
+}
+
+/* Animated Food Background */
+.bg-food-animated {
+    position: relative;
+    background: linear-gradient(
+        135deg,
+        var(--bg-velvet) 0%,
+        var(--secondary-mahogany) 50%,
+        var(--bg-charcoal) 100%
+    );
+    overflow: hidden;
+}
+
+.bg-food-animated::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+    background-image: 
+        url('./images/bg/bgf_1.jpg'),
+        url('./images/bg/bgf_2.jpg'),
+        url('./images/bg/bgf_3.jpg');
+    background-size: 
+        33.333% 500px,
+        33.333% 500px,
+        33.333% 500px;
+    background-position: 
+        0% 0%,
+        33.333% 0%,
+        66.666% 0%;
+    background-repeat: repeat-y;
+    opacity: 0.3;
+    z-index: 1;
+    animation: slowFloat 30s ease-in-out infinite;
+    filter: brightness(0.9) contrast(1.1);
+}
+
+.bg-food-animated::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        linear-gradient(
+            45deg,
+            rgba(26, 14, 14, 0.9) 0%,
+            rgba(139, 21, 56, 0.8) 25%,
+            rgba(184, 134, 11, 0.1) 50%,
+            rgba(139, 21, 56, 0.8) 75%,
+            rgba(26, 14, 14, 0.9) 100%
+        );
+    z-index: 2;
+    pointer-events: none;
+}
+
+.bg-food-animated > * {
+    position: relative;
+    z-index: 3;
+}
+
+@keyframes slowFloat {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-20px) scale(1.02);
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .bg-food::before,
+    .bg-food-static::before,
+    .bg-food-luxury::before,
+    .bg-food-animated::before {
+        background-size: 
+            100% auto,
+            100% auto,
+            100% auto;
+        background-position: 
+            0% 0%,
+            0% 33.333%,
+            0% 66.666%;
+        opacity: 0.2;
+    }
+    
+    .bg-food::after,
+    .bg-food-static::after,
+    .bg-food-luxury::after,
+    .bg-food-animated::after {
+        background: linear-gradient(
+            135deg,
+            rgba(26, 14, 14, 0.92) 0%,
+            rgba(139, 21, 56, 0.85) 50%,
+            rgba(26, 14, 14, 0.92) 100%
+        );
+    }
+}
+
+/* Text styling for food background sections */
+.bg-food .text-white,
+.bg-food-static .text-white,
+.bg-food-luxury .text-white,
+.bg-food-animated .text-white {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.bg-food h1, .bg-food h2, .bg-food h3,
+.bg-food-static h1, .bg-food-static h2, .bg-food-static h3,
+.bg-food-luxury h1, .bg-food-luxury h2, .bg-food-luxury h3,
+.bg-food-animated h1, .bg-food-animated h2, .bg-food-animated h3 {
+    color: var(--text-cream);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
+}
+
+/* Special effects for food background */
+.bg-food-glow {
+    position: relative;
+    background: linear-gradient(
+        135deg,
+        var(--bg-velvet) 0%,
+        var(--secondary-mahogany) 100%
+    );
+    overflow: hidden;
+}
+
+.bg-food-glow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        url('./images/bg/bgf_1.jpg'),
+        url('./images/bg/bgf_2.jpg'),
+        url('./images/bg/bgf_3.jpg');
+    background-size: 
+        33.333% auto,
+        33.333% auto,
+        33.333% auto;
+    background-position: 
+        0% center,
+        33.333% center,
+        66.666% center;
+    background-repeat: repeat-y;
+    opacity: 0.25;
+    z-index: 1;
+    filter: brightness(1.1) contrast(1.2) saturate(1.3);
+}
+
+.bg-food-glow::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 25% 25%, rgba(184, 134, 11, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(139, 21, 56, 0.2) 0%, transparent 50%),
+        linear-gradient(
+            135deg,
+            rgba(26, 14, 14, 0.85) 0%,
+            rgba(139, 21, 56, 0.6) 50%,
+            rgba(26, 14, 14, 0.85) 100%
+        );
+    z-index: 2;
+    pointer-events: none;
+    animation: glowPulse 8s ease-in-out infinite;
+}
+
+.bg-food-glow > * {
+    position: relative;
+    z-index: 3;
+}
+
+@keyframes glowPulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    .bg-food::after,
+    .bg-food-static::after,
+    .bg-food-luxury::after,
+    .bg-food-animated::after,
+    .bg-food-glow::after {
+        background: rgba(0, 0, 0, 0.9);
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .bg-food::before,
+    .bg-food-animated::before,
+    .bg-food-glow::after {
+        animation: none;
+    }
+}

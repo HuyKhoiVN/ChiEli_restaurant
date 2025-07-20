@@ -13,7 +13,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">
-                <i class="fas fa-utensils me-2"></i>Chi Eli
+                <img src="./images/logo.jpg" width="50" height="50" alt="">
+                Chi Eli
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -70,65 +71,206 @@
     </section>
 
     <!-- Menu Gallery -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">Speisekarte</h2>
-                    <div class="section-divider"></div>
+    <!-- Menu Gallery - Updated Section -->
+<section class="py-5 bg-food">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="section-title">Speisekarte</h2>
+                <div class="section-divider"></div>
+            </div>
+        </div>
+        
+        <!-- Simple Menu Carousel -->
+        <div class="position-relative">
+            <!-- Navigation Buttons -->
+            <button class="btn btn-primary position-absolute top-50 start-0 translate-middle-y" 
+                    id="menuCarouselPrev" 
+                    style="z-index: 10; margin-left: -25px;">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="btn btn-primary position-absolute top-50 end-0 translate-middle-y" 
+                    id="menuCarouselNext" 
+                    style="z-index: 10; margin-right: -25px;">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <!-- Carousel Container -->
+            <div class="overflow-hidden">
+                <div class="row g-4 transition-transform" id="menuCarouselTrack" style="transition: transform 0.5s ease;">
+                    <!-- Page 1 -->
+                    <div class="col-lg-4 col-12 menu-slide">
+                        <div class="menu-card">
+                            <img src="./images/1. Mitag_00001.svg?height=400&width=300" alt="Menu Page 1" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    <!-- Page 2 -->
+                    <div class="col-lg-4 col-12 menu-slide">
+                        <div class="menu-card">
+                            <img src="./images/2. Vorspeisen_00001.svg?height=400&width=300" alt="Menu Page 2" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    <!-- Page 3 -->
+                    <div class="col-lg-4 col-12 menu-slide">
+                        <div class="menu-card">
+                            <img src="./images/3. Dumplings - salat_00001.svg?height=400&width=300" alt="Menu Page 3" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    <!-- Page 4 -->
+                    <div class="col-lg-4 col-12 menu-slide">
+                        <div class="menu-card">
+                            <img src="./images/4. Vorspeisen Suppe- Hauptspeisen Suppen_00001.svg?height=400&width=300" alt="Menu Page 4" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    <!-- Page 5 -->
+                    <div class="col-lg-4 col-12 menu-slide">
+                        <div class="menu-card">
+                            <img src="./images/5. Vietnamesische Strassenküche_00001.svg?height=400&width=300" alt="Menu Page 5" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    <!-- Page 6 -->
+                    <div class="col-lg-4 col-12 menu-slide">
+                        <div class="menu-card">
+                            <img src="./images/6. Huhn_00001.svg?height=400&width=300" alt="Menu Page 6" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    <!-- Page 7 -->
+                    <div class="col-lg-4 col-12 menu-slide">
+                        <div class="menu-card">
+                            <img src="./images/7. Rind_00001.svg?height=400&width=300" alt="Menu Page 7" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    <!-- Page 8 -->
+                    <div class="col-lg-4 col-12 menu-slide">
+                        <div class="menu-card">
+                            <img src="./images/8. Ente_00001.svg" alt="Menu Page 8" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    <!-- Add more menu pages here as needed -->
+                    <!-- Page 9 -->
+                    <div class="col-lg-4 col-12 menu-slide">
+                        <div class="menu-card">
+                            <img src="./images/9. Garnelen-Fisch_00001.svg" alt="Menu Page 9" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    <!-- Page 10 -->
+                    <div class="col-lg-4 col-12 menu-slide">
+                        <div class="menu-card">
+                            <img src="./images/10. Nudeln -Reis_00001.svg" alt="Menu Page 10" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    <!-- Page 11 -->
+                    <div class="col-lg-4 col-12 menu-slide">
+                        <div class="menu-card">
+                            <img src="./images/11. Vegetarisch_00001.svg" alt="Menu Page 11" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+
+                    <!-- Page 12 -->
+                    <div class="col-lg-4 col-12 menu-slide">
+                        <div class="menu-card">
+                            <img src="./images/12. Maki_00001.svg" alt="Menu Page 12" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    <!-- Page 13 -->
+                    <div class="col-lg-4 col-12 menu-slide">
+                        <div class="menu-card">
+                            <img src="./images/13. Nigiri-Sashimi_00001.svg" alt="Menu Page 13" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    <!-- Page 14 -->
+                    <div class="col-lg-4 col-12 menu-slide">
+                        <div class="menu-card">
+                            <img src="./images/14. Inside-Out-Roll_00001.svg" alt="Menu Page 14" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    <!-- Page 15 -->
+                    <div class="col-lg-4 col-12 menu-slide">
+                        <div class="menu-card">
+                            <img src="./images/15. Temaki- Tatar- Tataki_00001.svg" alt="Menu Page 15" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    <!-- Page 16 -->
+                    <div class="col-lg-4 col-12 menu-slide">
+                        <div class="menu-card">
+                            <img src="./images/16. ChiEli Style_00001.svg" alt="Menu Page 16" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    <!-- Page 17 -->
+                    <div class="col-lg-4 col-12 menu-slide">
+                        <div class="menu-card">
+                            <img src="./images/17. Tempura_00001.svg" alt="Menu Page 17" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    <!-- Page 18 -->
+                    <div class="col-lg-4 col-12 menu-slide">
+                        <div class="menu-card">
+                            <img src="./images/18. Sushimenü_00001.svg" alt="Menu Page 18" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    <!-- Page 19 -->
+                    <div class="col-lg-4 col-12 menu-slide">
+                        <div class="menu-card">
+                            <img src="./images/19. Bailage- Desert_00001.svg" alt="Menu Page 19" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    <!-- Page 20 -->
+                    <div class="col-lg-4 col-12 menu-slide">
+                        <div class="menu-card">
+                            <img src="./images/20 .Aperitif-Mocktails_00001.svg" alt="Menu Page 20" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    <!-- Page 21 -->
+                    <div class="col-lg-4 col-12 menu-slide">
+                        <div class="menu-card">
+                            <img src="./images/21. Cocktail-Bier_00001.svg" alt="Menu Page 21" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    <!-- Page 22 -->
+                    <div class="col-lg-4 col-12 menu-slide">
+                        <div class="menu-card">
+                            <img src="./images/22. Sätfe- Softdrinks_00001.svg" alt="Menu Page 22" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    <!-- Page 23 -->
+                    <div class="col-lg-4 col-12 menu-slide">
+                        <div class="menu-card">
+                            <img src="./images/23. Wasser- Schweppes- Tee_00001.svg" alt="Menu Page 23" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    <!-- Page 24 -->
+                    <div class="col-lg-4 col-12 menu-slide">
+                        <div class="menu-card">
+                            <img src="./images/24. Weißweine-Rotweine-Roseweine_00001.svg" alt="Menu Page 24" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    <!-- Page 25 -->
+                    <div class="col-lg-4 col-12 menu-slide">
+                        <div class="menu-card">
+                            <img src="./images/25. Prosecco-Champagner- Kaffe_00001.svg" alt="Menu Page 25" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    <!-- Continue adding more pages... -->
                 </div>
             </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="menu-card">
-                        <img src="./images/1. Mitag_00001.svg?height=400&width=300" alt="Menu Page 1" class="img-fluid rounded shadow">
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="menu-card">
-                        <img src="./images/2. Vorspeisen_00001.svg?height=400&width=300" alt="Menu Page 2" class="img-fluid rounded shadow">
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="menu-card">
-                        <img src="./images/3. Dumplings - salat_00001.svg?height=400&width=300" alt="Menu Page 3" class="img-fluid rounded shadow">
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="menu-card">
-                        <img src="./images/4. Vorspeisen Suppe- Hauptspeisen Suppen_00001.svg?height=400&width=300" alt="Menu Page 4" class="img-fluid rounded shadow">
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="menu-card">
-                        <img src="./images/5. Vietnamesische Strassenküche_00001.svg?height=400&width=300" alt="Menu Page 5" class="img-fluid rounded shadow">
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="menu-card">
-                        <img src="./images/6. Huhn_00001.svg?height=400&width=300" alt="Menu Page 6" class="img-fluid rounded shadow">
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="menu-card">
-                        <img src="./images/7. Rind_00001.svg?height=400&width=300" alt="Menu Page 7" class="img-fluid rounded shadow">
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="menu-card">
-                        <img src="./images/8. Ente_00001.svg" alt="Menu Page 8" class="img-fluid rounded shadow">
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col-12 text-center">
-                    <a href="sushi-karte.html" class="btn btn-primary btn-lg">
-                        <i class="fas fa-fish me-2"></i>Zur Sushi-Karte
-                    </a>
+            
+            <!-- Carousel Indicators -->
+            <div class="text-center mt-4">
+                <div id="menuCarouselIndicators" class="d-inline-flex gap-2">
+                    <!-- Indicators will be generated by JavaScript -->
                 </div>
             </div>
         </div>
-    </section>
+        
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <a href="sushi-karte.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-fish me-2"></i>Zur Sushi-Karte
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Featured Dishes -->
     <section class="py-5">
@@ -143,7 +285,7 @@
             <!-- Dish 1 -->
             <div class="row align-items-center mb-5">
                 <div class="col-lg-6 mb-4 mb-lg-0">
-                    <img src="/placeholder.svg?height=400&width=600" alt="Nom Du Du" class="img-fluid rounded shadow">
+                    <img src="./images/dish_nomdudu.jpg" width="600" height="400" alt="Nom Du Du" class="img-fluid rounded shadow">
                 </div>
                 <div class="col-lg-6">
                     <div class="dish-info">
@@ -160,7 +302,7 @@
             <!-- Dish 2 -->
             <div class="row align-items-center mb-5">
                 <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
-                    <img src="/placeholder.svg?height=400&width=600" alt="Bun Nem Ha Noi" class="img-fluid rounded shadow">
+                    <img src="./images/dish_bunnemran.webp" width="600" height="400" alt="Bun Nem Ha Noi" class="img-fluid rounded shadow">
                 </div>
                 <div class="col-lg-6 order-lg-1">
                     <div class="dish-info">
@@ -175,19 +317,48 @@
             <hr class="my-5">
 
             <!-- Dish 3 -->
-            <div class="row align-items-center">
+            <div class="row align-items-center mb-5">
                 <div class="col-lg-6 mb-4 mb-lg-0">
-                    <img src="/placeholder.svg?height=400&width=600" alt="Vietnam Platte" class="img-fluid rounded shadow">
+                    <img src="./images/dish_phobo.jpg" width="600" height="400" alt="Pho bo" class="img-fluid rounded shadow">
                 </div>
                 <div class="col-lg-6">
                     <div class="dish-info">
-                        <h3 class="h2 mb-3 text-primary">VIETNAM PLATTE</h3>
+                        <h3 class="h2 mb-3 text-primary">PHO BO</h3>
                         <p class="lead">
-                            Hausgemachte Vorspeiseplatte für 2 Personen mit 5 verschiedenen vietnamesischen Frühlingsrollen, Mango Salat, Reisnudeln, asiatischen Kräutern und verschiedene Dip Soße
+                            Traditionelle Rindfleisch-Phở mit aromatischer Brühe, weichen Reisnudeln und zartem Rindfleisch.
                         </p>
                     </div>
                 </div>
             </div>
+            <hr class="my-5">
+            <!-- Dish 4 -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <img src="./images/dish_buntronbo.jpg" width="600" height="400" alt="Bun Tron Bo" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="dish-info">
+                        <h3 class="h2 mb-3 text-primary">BUN TRON BO</h3>
+                        <p class="lead">
+                            Ein köstliches Gericht mit Reisnudeln, Rindfleisch, frischen Kräutern und einer speziellen Sauce, die für ein unvergleichliches Geschmackserlebnis sorgt.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5">
+            <!-- Dish 5 -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="./images/dish_goicuon.webp" width="600" height="400" alt="Goi Cuon" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <div class="dish-info">
+                        <h3 class="h2 mb-3 text-primary">GOI CUON</h3>
+                        <p class="lead">
+                            Ein erfrischender vietnamesischer Frühlingsrollensalat mit Garnelen, frischem Gemüse und einer würzigen Erdnusssauce.
+                        </p>
+                    </div>
+                </div>
         </div>
     </section>
 
@@ -259,20 +430,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
     
-        <ul class="cc-FloatingButtonBarContainer cc-FloatingButtonBarContainer-right hidden">
-            <!-- scroll to top button -->
-            <li class="cc-FloatingButtonBarContainer-button-scroll">
-                <a href="javascript:void(0);" title="Nach oben scrollen">
-                    <span>Nach oben scrollen</span>
-                </a>
-            </li>
-            <script>
-                // <![CDATA[
-
-                window.regModule("common_scrolltotop", []);
-                // ]]>
-            </script>
-        </ul>
+        
         <script type="text/javascript">
             //<![CDATA[
             addAutomatedTracking('creator.website', track_anon);
