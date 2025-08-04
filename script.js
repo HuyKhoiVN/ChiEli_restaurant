@@ -362,7 +362,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    console.log('TuNong Restaurant Website JavaScript loaded successfully!');
 });
 
 // Add dynamic CSS for lightbox and animations

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getränkekarte - Chi Eli Asia Fusion Kitchen</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="./images/logo.jpg" width="50" height="50" alt="">
+                Chi Eli
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="speisekarte.html">Speisekarte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sushi-karte.html">Sushi-Karte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="getraenk.html">Getränke</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold text-white mb-4">Getränkekarte</h1>
+                    <p class="lead text-white">Erlesene Getränke für jeden Geschmack</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drinks Description -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="lead mb-4">
+                        Entdecken Sie unsere sorgfältig kuratierte Auswahl an Getränken, die perfekt zu unserer asiatischen Fusionsküche harmonieren.
+                    </p>
+                    <p class="mb-4">
+                        Von traditionellen asiatischen Tees über kreative Cocktails bis hin zu erlesenen Weinen - wir bieten für jeden Moment das passende Getränk.
+                    </p>
+                    <p class="fw-bold">Lassen Sie sich von unserer Vielfalt inspirieren!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drinks Menu Gallery -->
+    <section class="py-5 bg-food-luxury">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title text-white">Getränkekarte</h2>
+                    <div class="section-divider"></div>
+                </div>
+            </div>
+            
+            <!-- Simple Menu Carousel -->
+            <div class="position-relative">
+                <!-- Navigation Buttons -->
+                <button class="btn btn-primary position-absolute top-50 start-0 translate-middle-y" 
+                        id="drinksCarouselPrev" 
+                        style="z-index: 10; margin-left: -25px;">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="btn btn-primary position-absolute top-50 end-0 translate-middle-y" 
+                        id="drinksCarouselNext" 
+                        style="z-index: 10; margin-right: -25px;">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <!-- Carousel Container -->
+                <div class="overflow-hidden">
+                    <div class="row g-4 transition-transform" id="drinksCarouselTrack" 
+                         style="transition: transform 0.5s ease;">
+                        <!-- Drinks Menu Page 1 -->
+                        <div class="col-lg-4 col-12 drinks-slide">
+                            <div class="menu-card">
+                                <img src="./images/20 .Aperitif-Mocktails_00001.svg" alt="Aperitif & Mocktails" 
+                                     class="img-fluid rounded shadow">
+                            </div>
+                        </div>
+                        <!-- Drinks Menu Page 2 -->
+                        <div class="col-lg-4 col-12 drinks-slide">
+                            <div class="menu-card">
+                                <img src="./images/21. Cocktail-Bier_00001.svg" alt="Cocktails & Bier" 
+                                     class="img-fluid rounded shadow">
+                            </div>
+                        </div>
+                        <!-- Drinks Menu Page 3 -->
+                        <div class="col-lg-4 col-12 drinks-slide">
+                            <div class="menu-card">
+                                <img src="./images/22. Sätfe- Softdrinks_00001.svg" alt="Säfte & Softdrinks" 
+                                     class="img-fluid rounded shadow">
+                            </div>
+                        </div>
+                        <!-- Drinks Menu Page 4 -->
+                        <div class="col-lg-4 col-12 drinks-slide">
+                            <div class="menu-card">
+                                <img src="./images/23. Wasser- Schweppes- Tee_00001.svg" alt="Wasser, Schweppes & Tee" 
+                                     class="img-fluid rounded shadow">
+                            </div>
+                        </div>
+                        <!-- Drinks Menu Page 5 -->
+                        <div class="col-lg-4 col-12 drinks-slide">
+                            <div class="menu-card">
+                                <img src="./images/24. Weißweine-Rotweine-Roseweine_00001.svg" alt="Weine" 
+                                     class="img-fluid rounded shadow">
+                            </div>
+                        </div>
+                        <!-- Drinks Menu Page 6 -->
+                        <div class="col-lg-4 col-12 drinks-slide">
+                            <div class="menu-card">
+                                <img src="./images/25. Prosecco-Champagner- Kaffe_00001.svg" alt="Prosecco, Champagner & Kaffee" 
+                                     class="img-fluid rounded shadow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Carousel Indicators -->
+                <div class="text-center mt-4">
+                    <div id="drinksCarouselIndicators" class="d-inline-flex gap-2">
+                        <!-- Indicators will be generated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Drinks Categories -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Unsere Getränke-Highlights</h2>
+                    <div class="section-divider"></div>
+                    <p class="lead">Entdecken Sie unsere exquisite Auswahl an Getränken</p>
+                </div>
+            </div>
+            
+            <div id="drinks-highlights-container">
+                <!-- Content will be generated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation to other menus -->
+    <section class="py-5 bg-food-glow">
+        <div class="container">
+            <div class="row g-3 justify-content-center">
+                <div class="col-md-4">
+                    <a href="speisekarte.html" class="btn btn-primary btn-lg w-100">
+                        <i class="fas fa-utensils me-2"></i>Zur Speisekarte
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="sushi-karte.html" class="btn btn-primary btn-lg w-100">
+                        <i class="fas fa-fish me-2"></i>Zur Sushi-Karte
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="kontakt.html" class="btn btn-accent btn-lg w-100">
+                        <i class="fas fa-phone me-2"></i>Reservierung
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-accent">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h3 class="mb-4">Durst auf etwas Besonderes?</h3>
+                    <p class="mb-4">Lassen Sie sich von unserer vielfältigen Getränkeauswahl überraschen</p>
+                    <a href="tel:+4981519799969" class="btn btn-primary btn-lg">
+                        <i class="fas fa-phone me-2"></i>Jetzt Bestellen: 08151 - 97 999 69
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-accent mb-3">Chi Eli Asia Fusion Kitchen</h5>
+                    <p class="mb-2">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        Adresse: Münchener str.6 <br>
+                        83620 Feldkirchen-Westerham
+                    </p>
+                    <p class="mb-2">
+                        <i class="fas fa-phone me-2"></i>
+                        <a href="tel:+4981519799969" class="text-light text-decoration-none">08151 - 97 999 69</a>
+                    </p>
+                </div>
+                <div class="col-lg-5 mb-4">
+                    <h5 class="text-accent mb-3">Öffnungszeiten</h5>
+                    <div class="row mb-3">
+                        <div class="col-6 text-start">
+                            <strong>Montag-Sonntag:</strong>
+                        </div>
+                        <div class="col-6 text-start">
+                            11:30 -15:00 und 17:00-22:00 Uhr.
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-6 text-start">
+                            <strong>Samstag:</strong>
+                        </div>
+                        <div class="col-6 text-start">
+                            17:00-22:00 Uhr.
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12 text-start">
+                            <i>Dienstag Ruhetag</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 Chi Eli.de - Alle Rechte vorbehalten</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="drinks-script.js"></script>
+</body>
+</html>
