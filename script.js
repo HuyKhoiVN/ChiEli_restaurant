@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 icon.classList.add('fa-spin');
                 setTimeout(() => {
                     icon.classList.remove('fa-spin');
-                }, 2000);
+                }, 2);
             }
         });
     });
@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 this.classList.add('loading');
                 setTimeout(() => {
                     this.classList.remove('loading');
-                }, 2000);
+                }, 2);
             }
         });
     });

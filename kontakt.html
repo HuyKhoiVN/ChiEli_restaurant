@@ -2,13 +2,231 @@
 <html lang="de">
 
 <head>
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt - Chi Eli Asia Fusion Kitchen</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>Kontakt - Chi Eli Asia Fusion Kitchen - Asiatisches Restaurant in Starnberg | Vietnamesische & Sushi Küche</title>
+    <meta name="title" content="Chi Eli Asia Fusion Kitchen - Asiatisches Restaurant in Starnberg | Vietnamesische & Sushi Küche">
+    <meta name="description" content="Chi Eli Asia Fusion Kitchen in Starnberg - Authentische vietnamesische Küche, frisches Sushi und kreative Cocktails. Reservieren Sie jetzt! ☎ 08151-97999969">
+    <meta name="keywords" content="Chi Eli, Asia Fusion, Restaurant Starnberg, Vietnamesisches Restaurant, Sushi, Pho, Asiatische Küche, Cocktails, Feldkirchen-Westerham, Münchener Straße">
+    <meta name="author" content="Chi Eli Asia Fusion Kitchen">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="German">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://chi-eli-restaurant.vercel.app/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/logo.jpg">
+    <link rel="shortcut icon" href="./images/logo.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/logo.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/logo.jpg">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="restaurant">
+    <meta property="og:url" content="https://chi-eli-restaurant.vercel.app/">
+    <meta property="og:title" content="Chi Eli Asia Fusion Kitchen - Asiatisches Restaurant in Starnberg">
+    <meta property="og:description" content="Authentische vietnamesische Küche, frisches Sushi und kreative Cocktails in Starnberg. Erleben Sie kulinarische Vielfalt in elegantem Ambiente.">
+    <meta property="og:image" content="https://chi-eli-restaurant.vercel.app/images/logo.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Chi Eli Asia Fusion Kitchen">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:locale:alternate" content="en_US">
+    
+    <!-- Restaurant specific Open Graph -->
+    <meta property="restaurant:contact_info:phone_number" content="+4981519799969">
+    <meta property="restaurant:contact_info:website" content="https://chi-eli-restaurant.vercel.app">
+    <meta property="place:location:latitude" content="47.9959">
+    <meta property="place:location:longitude" content="11.3461">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://chi-eli-restaurant.vercel.app">
+    <meta property="twitter:title" content="Chi Eli Asia Fusion Kitchen - Asiatisches Restaurant in Starnberg">
+    <meta property="twitter:description" content="Authentische vietnamesische Küche, frisches Sushi und kreative Cocktails in Starnberg. Reservieren Sie jetzt!">
+    <meta property="twitter:image" content="https://chi-eli-restaurant.vercel.app/images/logo.jpg">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Chi Eli Asia Fusion Kitchen",
+        "image": [
+            "https://chi-eli-restaurant.vercel.app/images/logo.jpg",
+            "https://chi-eli-restaurant.vercel.app/images/noi_that.jpg"
+        ],
+        "description": "Chi Eli Asia Fusion Kitchen bietet authentische vietnamesische Küche, frisches Sushi und kreative Cocktails in Starnberg. Moderne asiatische Fusionsküche in elegantem Ambiente.",
+        "url": "https://www.chi-eli.de",
+        "telephone": "+4981519799969",
+        "email": "info@chi-eli.de",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Münchener Str. 6",
+            "addressLocality": "Feldkirchen-Westerham",
+            "postalCode": "83620",
+            "addressCountry": "DE",
+            "addressRegion": "Bayern"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 47.9959,
+            "longitude": 11.3461
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Wednesday", "Thursday", "Friday", "Sunday"],
+                "opens": "11:30",
+                "closes": "15:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Wednesday", "Thursday", "Friday", "Sunday"],
+                "opens": "17:00",
+                "closes": "22:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "17:00",
+                "closes": "22:00"
+            }
+        ],
+        "servesCuisine": [
+            "Vietnamese",
+            "Asian Fusion",
+            "Sushi",
+            "Asian"
+        ],
+        "priceRange": "€€",
+        "acceptsReservations": true,
+        "hasMenu": "https://chi-eli-restaurant.vercel.app/speisekarte.html",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "127"
+        },
+        "paymentAccepted": "Cash, Credit Card, Debit Card",
+        "currenciesAccepted": "EUR",
+        "smokingAllowed": false,
+        "sameAs": [
+            "https://www.facebook.com/chieliastarnberg",
+            "https://www.instagram.com/chieli_starnberg"
+        ]
+    }
+    </script>
+    
+    <!-- Menu Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Menu",
+        "name": "Chi Eli Speisekarte",
+        "description": "Authentische vietnamesische Gerichte, frisches Sushi und kreative Cocktails",
+        "hasMenuSection": [
+            {
+                "@type": "MenuSection",
+                "name": "Vorspeisen",
+                "description": "Traditionelle vietnamesische Vorspeisen"
+            },
+            {
+                "@type": "MenuSection",
+                "name": "Hauptgerichte",
+                "description": "Authentische vietnamesische Hauptgerichte"
+            },
+            {
+                "@type": "MenuSection",
+                "name": "Sushi",
+                "description": "Frisches Sushi und Sashimi"
+            },
+            {
+                "@type": "MenuSection",
+                "name": "Getränke",
+                "description": "Cocktails, Weine und asiatische Tees"
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://chi-eli-restaurant.vercel.app/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Speisekarte",
+                "item": "https://chi-eli-restaurant.vercel.app/speisekarte.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Sushi-Karte",
+                "item": "https://chi-eli-restaurant.vercel.app/sushi-karte.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Getränke",
+                "item": "https://chi-eli-restaurant.vercel.app/getraenk.html"
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Local SEO -->
+    <meta name="geo.region" content="DE-BY">
+    <meta name="geo.placename" content="Starnberg, Feldkirchen-Westerham">
+    <meta name="geo.position" content="47.9959;11.3461">
+    <meta name="ICBM" content="47.9959, 11.3461">
+    
+    <!-- Mobile App -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Chi Eli">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Chi Eli">
+    <meta name="theme-color" content="#8B1538">
+    <meta name="msapplication-TileColor" content="#8B1538">
+    <meta name="msapplication-navbutton-color" content="#8B1538">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    
+    <!-- Stylesheets -->
+    <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    
+    <!-- Alternate Languages -->
+    <link rel="alternate" hreflang="de" href="https://chi-eli-restaurant.vercel.app/">
+    <link rel="alternate" hreflang="en" href="https://chi-eli-restaurant.vercel.app/en/">
+    <link rel="alternate" hreflang="x-default" href="https://chi-eli-restaurant.vercel.app/">
 </head>
+
 
 <body>
     <!-- Navigation -->
