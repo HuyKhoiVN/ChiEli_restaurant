@@ -161,6 +161,14 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: var(--shadow-burgundy), var(--glow-burgundy);
 }
 
+.fixed-top {
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
 /* Luxury Navigation */
 .navbar {
     background: linear-gradient(135deg, 
@@ -707,6 +715,7 @@ footer::before {
     #menuCarouselNext {
         margin-left: -15px !important;
         margin-right: -15px !important;
+        display: none;
     }
 }
 
@@ -714,11 +723,13 @@ footer::before {
     #menuCarouselPrev {
         left: 10px !important;
         margin-left: 0 !important;
+        display: none;
     }
     
     #menuCarouselNext {
         right: 10px !important;
         margin-right: 0 !important;
+        display: none;
     }
 }
 
@@ -2082,6 +2093,7 @@ footer::before {
   #drinksCarouselNext {
     margin-left: -15px !important;
     margin-right: -15px !important;
+    display: none;
   }
 }
 
@@ -2089,11 +2101,13 @@ footer::before {
   #drinksCarouselPrev {
     left: 10px !important;
     margin-left: 0 !important;
+    display: none;
   }
 
   #drinksCarouselNext {
     right: 10px !important;
     margin-right: 0 !important;
+    display: none;
   }
 }
 
